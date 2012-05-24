@@ -1,0 +1,16 @@
+{
+  "author": "kwatanabe",
+  "name": "webdbsample",
+  "description": "sample program for testing node",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": ">=1.0.0",
+    "express": ">2.5.0 <3.0.0",
+    "async": "*"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
