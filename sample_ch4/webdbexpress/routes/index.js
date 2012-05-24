@@ -9,5 +9,10 @@ exports.index = function(req, res){
 
 exports.sample1 = function(req, res){
   var id = req.param('id'); // app.jsで記述されたルーティングに基づきidを受け取る
-  res.send(id, {'Content-Type':'text/plain'},200);
+  res.render('foo', {
+    title: 'WEB+DB PRESS Express Sample',
+    var1: 'Dog',
+    var2: 'ShibaInu',
+    var3: req.param('id')
+  }); // jadeファイルをレンダリング
 }
