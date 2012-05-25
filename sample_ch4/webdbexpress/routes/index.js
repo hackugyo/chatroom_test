@@ -24,7 +24,7 @@ client.open(function (err, client) {
   if (err) {
     console.log(err);
   } else {
-    cosole.log('connected to mongodb');
+    console.log('connected to mongodb');
   }
 });
 

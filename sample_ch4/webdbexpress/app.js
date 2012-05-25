@@ -7,7 +7,7 @@ var express = require('express')
   , routes = require('./routes');
 
 var app = module.exports = express.createServer();
-
+app.listen(8142);
 // Configuration
 
 app.configure(function(){
