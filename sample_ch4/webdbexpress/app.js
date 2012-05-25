@@ -31,6 +31,8 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 app.get('/foo/:id', routes.sample1); // foo/test1, foo/bar, なんでもOK
+app.get('/mongo', routes.showMongo);
+app.post('/mongo', routes.saveMongo);
 
 app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
